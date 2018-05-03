@@ -1,8 +1,12 @@
-var a = 2;
-var b = 4;
+var a = 2,
+    b = 4;
+
 var value = (a * a) - (2 * a * b) - (b * b);
-var value = value < 0 ? 'wynik ujemny' : 'wynik dodatni';
-console.log(value);
-if (value == 0) {
+
+if (value < 0) {
+	console.log('wynik jest ujemny');
+} else if (value > 0) {
+	console.log('wynik jest dodatni');
+} else {
 	console.log('wynik jest zerowy');
 }
